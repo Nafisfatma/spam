@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Spam Detection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .hero-about {
+      
+      background-image: url('https://r17.co.id/uploads/posts/d1b6fcfdd28a223b16195b09f4b2a084.webp');
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .hero-about h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero-about p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+    .main-about {
+      padding: 60px 15px;
+    }
+    .about-card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    footer {
+      background-color: #1c1f26;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+      color: white;
+    }
+    .change-hero-text{
+      background-color: #1515b794;
+            border-radius: 10px;
+            padding: 20px;
+            width: 800px;
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-about">
+    <div class="container change-hero-text">
+      <h1>About Us</h1>
+      <p>Driven by innovation, powered by AI — we fight spam so you don’t have to.</p>
+    </div>
+  </section>
+
+  <!-- Two Columns Section -->
+  <section class="main-about">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-md-6">
+          <img src="https://t4.ftcdn.net/jpg/09/63/54/13/360_F_963541305_wNPbR20GMTVt5SvSxxgv7CRqXJNWI1hx.jpg">
+        </div>
+        <!-- Text Column -->
+        <div class="col-md-6">
+          <h2>Our Mission</h2>
+          <p>We aim to provide the most advanced spam detection tools to ensure your communication remains safe and secure. Our AI-powered solutions are designed to adapt to evolving threats and deliver unmatched accuracy.</p>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="two-columns-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-md-6">
+                <h2>What We Do</h2>
+                <p style="text-align: justify;">Spam Detection: Our model is trained on diverse datasets to accurately detect spam emails, messages, and other unwanted communications.
+
+                  Real-Time Protection: We ensure fast and reliable detection to minimize threats before they reach your inbox.
+                  
+                  Continuous Improvement: With ongoing learning and updates, our model evolves to counter emerging spam techniques and adapt to new patterns.
+                  
+                  Privacy First: We prioritize user privacy, ensuring that all data is handled securely and ethically.</p>
+                <a href="#contact" class="btn btn-primary">Learn More</a>
+            </div>
+            <!-- Image Column -->
+            <div class="col-md-6">
+                <img src="https://microtime.com/wp-content/uploads/2024/09/blogs-spam.jpg" alt="Our Mission Image" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="features-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Team</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="https://th.bing.com/th/id/OIP.7nxHMDpJzz68wItRDHqmtwHaE7?w=247&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"width= 300  class="card-img-top" alt="Feature 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Developer</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="https://thumbs.dreamstime.com/b/portrait-asian-beautiful-business-woman-smile-work-office-attractive-professional-female-employee-worker-formal-wear-238115115.jpg" width= 300 class="card-img-top" alt="Feature 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Front end designer</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="https://th.bing.com/th/id/OIP.Jw1ij013jxt8j7XConLE_gHaE7?rs=1&pid=ImgDetMain" width= 300 ="card-img-top" alt="Feature 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Backend Developer</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="https://t3.ftcdn.net/jpg/03/58/93/04/360_F_358930412_rodvr4vvY4LG0bUG8MKC3wwCZhWGozcW.jpg" width= 300 class="card-img-top" alt="Feature 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Manager</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="client-feedback-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">What Our Clients Say</h2>
+        <div class="row">
+            <!-- Feedback 1 -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width=200 class="rounded-circle mx-auto mt-3" alt="Client 1">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">"The spam detection system has been a game-changer.It’s accurate, fast, and reliable!"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Feedback 2 -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://media.istockphoto.com/id/1323167284/photo/young-successful-indian-man-wearing-stylish-eyeglasses-standing-on-the-street-handsome-asian.jpg?s=170667a&w=0&k=20&c=RmFpHJBfMvjBxwnHhrns8Ba02HIeL70l1LA9Wl23II4=" width=200 class="rounded-circle mx-auto mt-3" alt="Client 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text">"I’m impressed with how easy it is to integrate this tool into our existing systems. Highly recommended!"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Feedback 3 -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://media.istockphoto.com/id/1342253990/photo/portrait-of-a-young-man-at-work.jpg?s=612x612&w=0&k=20&c=_p6kNJV5BpFe5gNRWazHP6a0txRE2u8fEAL_tn88T0A=" width=200 class="rounded-circle mx-auto mt-3" alt="Client 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Michael Brown</h5>
+                        <p class="card-text">"The real-time spam detection feature has saved us so much time and effort. Fantastic product!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="counter-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Achievements</h2>
+        <div class="row text-center">
+            <!-- Counter 1 -->
+            <div class="col-md-4">
+                <h3 class="display-4 text-primary" id="awards">50+</h3>
+                <p>Awards Won</p>
+            </div>
+            <!-- Counter 2 -->
+            <div class="col-md-4">
+                <h3 class="display-4 text-primary" id="employees">100+</h3>
+                <p>Employees</p>
+            </div>
+            <!-- Counter 3 -->
+            <div class="col-md-4">
+                <h3 class="display-4 text-primary" id="projects">200+</h3>
+                <p>Projects Completed</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <!-- <footer>
+    <div class="container">
+      <p>© 2025 SpamShield Inc. | <a href="#">Terms of Use</a> | <a href="#">Contact Us</a></p>
+    </div>
+  </footer> -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{% endblock %}

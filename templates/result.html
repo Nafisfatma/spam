@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection Result</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f6fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            background: white;
+        }
+
+        .btn-back {
+            background-color: #6c63ff;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 24px;
+            font-weight: 500;
+        }
+
+        .btn-back:hover {
+            background-color: #574fd2;
+        }
+
+        .key {
+            background: linear-gradient(145deg, #6c63ff, #8e80ff);
+            color: white;
+        }
+
+        .feature-box i {
+            font-size: 2.5rem;
+            color: #fafafd;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-box h5 {
+            margin-top: 10px;
+        }
+
+        .image-gallery-section img {
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery-section img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container my-5">
+    <div class="card p-5 text-center shadow-lg border-0 rounded-4 bg-white animate__animated animate__fadeInUp" style="background: linear-gradient(135deg, #f0f4ff, #ffffff);">
+        <h2 class="mb-4 fw-bold text-primary display-5">🔍 Spam Detection Result</h2>
+
+        <!-- Analyzed Message -->
+        <div class="mb-5">
+            <h5 class="text-secondary fw-semibold">Analyzed Message:</h5>
+            <p class="text-muted fs-5 fst-italic border-start border-4 ps-3 border-primary bg-light rounded">
+                "{{ message }}"
+            </p>
+        </div>
+
+        <!-- Predictions -->
+        <div class="mb-4">
+            <h5 class="text-secondary fw-semibold">Predictions:</h5>
+            <div class="list-group">
+                {% for model, result in predictions.items() %}
+                    <div class="list-group-item d-flex justify-content-between align-items-center border-0 shadow-sm rounded mb-2">
+                        <strong class="text-primary">{{ model }}</strong>
+                        <span class="badge fs-6 {% if 'spam' in result[0]|lower %}bg-danger{% else %}bg-success{% endif %}">
+                            {{ result[0] }}
+                        </span>
+                        <small class="text-muted ms-2">Confidence: {{ '%.2f'|format(result[1]*100) }}%</small>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="py-5 key">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Key Features of Our Spam Detection Tool</h2>
+      <p class="text-white-50">Fast, accurate, and privacy-focused — everything you need to filter spam effectively.</p>
+    </div>
+
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="feature-box">
+          <i class="bi bi-lightning-fill"></i>
+          <h5>Real-Time Detection</h5>
+          <p>Instant, AI-powered predictions with top-tier accuracy.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <i class="bi bi-plug-fill"></i>
+          <h5>Easy Integration</h5>
+          <p>Connect to your system seamlessly with our lightweight API.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box">
+          <i class="bi bi-bar-chart-line"></i>
+          <h5>Detailed Results</h5>
+          <p>Confidence scores, rationale, and next-step suggestions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="image-gallery-section py-5">
+  <div class="container">
+      <h2 class="text-center mb-5 text-primary">Our Tech Stack</h2>
+      <div class="row text-center justify-content-center">
+          <div class="col-md-3 col-6 mb-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/701px-Python-logo-notext.svg.png" width="80" alt="Python Logo">
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+              <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-file-html-shiny-icon-svg-wikimedia-commons-11.png" width="80" alt="HTML5 Logo">
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+              <img src="https://img.icons8.com/fluent/512/css3.png" width="80" alt="CSS3 Logo">
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="80" alt="Flask Logo">
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{% endblock %}

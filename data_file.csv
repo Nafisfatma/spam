@@ -1,0 +1,53 @@
+message,label
+"Congratulations! You've won a free ticket to Bahamas! Click here to claim your prize.",spam
+"Hey, are we still meeting at the coffee shop tomorrow?",not spam
+"Urgent! Your account has been suspended. Please click the link to reactivate.",spam
+"Don't forget to pick up groceries on your way home.",not spam
+"Limited-time offer! Buy one, get one free on all items. Shop now!",spam
+"Hi Mom, just wanted to let you know I arrived safely.",not spam
+"Update your payment details to continue enjoying our services.",spam
+"Let's catch up soon. It's been too long!",not spam
+"Your loan application has been approved. Contact us for more details.",spam
+"Happy Birthday! Hope you have a fantastic day!",not spam
+"Exclusive offer! You have been selected to win a $500 gift card. Act now!",spam
+"Don't forget about your dentist appointment next Tuesday.",not spam
+"Win a brand new car! Enter the contest for free by clicking here.",spam
+"Can you send me the recipe for that amazing cake you made?",not spam
+"Alert! Unusual activity detected on your bank account. Verify now.",spam
+"I'm free for lunch tomorrow if you're around.",not spam
+"Your package has been delayed. Click to track your order.",spam
+"Let's go for a walk in the park this weekend.",not spam
+"Congratulations, you have been pre-approved for a loan! Apply today.",spam
+"Looking forward to our movie night!",not spam
+"You've been selected for a special VIP offer. Claim it today!",spam
+"Can you help me with my homework later?",not spam
+"Your subscription is about to expire. Renew now to avoid interruption.",spam
+"Grandma says hi and hopes you're doing well.",not spam
+"Claim your free trial now! Limited time only.",spam
+"Are you coming to the office party on Friday?",not spam
+"Attention! Your warranty is about to expire. Renew now.",spam
+"Let me know when you're free for a call.",not spam
+"Get rich quick! Start earning from home with no experience needed.",spam
+"Just checking in to see how you're doing.",not spam
+"Congratulations! You've been selected to test our new product.",spam
+"Remember to water the plants while I'm away.",not spam
+"Urgent! Pay your outstanding balance to avoid penalties.",spam
+"Can't wait to catch up this weekend!",not spam
+"Earn $100 a day from home. Sign up now!",spam
+"Let's grab dinner sometime soon.",not spam
+"Verify your email now to secure your account.",spam
+"Did you finish the book I recommended?",not spam
+"Attention! Your car insurance is about to expire. Act now!",spam
+"Thank you for the lovely gift. I really appreciate it.",not spam
+"Win an all-expenses-paid vacation! Click here to enter.",spam
+"See you at the meeting tomorrow at 10 AM.",not spam
+"Your credit score has changed. Check it now for free.",spam
+"Hope you're feeling better today.",not spam
+"Urgent! Immediate action required for your account.",spam
+"I'll be late to the dinner party, save me a seat!",not spam
+"Special promotion: Get 50% off your next purchase. Shop now!",spam
+"Don't worry, everything will work out just fine.",not spam
+"Get instant access to the best investment secrets. Sign up!",spam
+"Can you send me the meeting notes?",not spam
+"Your mobile number has won a lottery prize! Claim now.",spam
+"Miss you! Let's catch up soon.",not spam

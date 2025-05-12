@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            
+            background-image: url('https://dtcinfotech.com/wp-content/uploads/2022/08/cyber-security-data-protection-concept_325164-450.webp');
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 100px 0;
+            text-align: center;
+        }
+        .info-section {
+            padding: 50px 0;
+        }
+        .info-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .cards-section {
+            padding: 50px 0;
+        }
+        .card img {
+            border-radius: 10px;
+        }
+        .why-choose-us-section {
+            padding: 50px 0;
+        }
+        .why-choose-us-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .custom-hero-text {
+            background-color: #1515b794;
+            border-radius: 10px;
+            padding: 20px;
+            width: 800px;
+        }
+        .custom-hero-text h1 {
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container custom-hero-text">
+            <h1 class="display-4">Spam Detection Made Easy</h1>
+            <p class="lead">Identify and filter spam messages with our advanced detection system.</p>
+            <a href="#main-content" class="btn btn-light btn-lg">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://media.istockphoto.com/id/160975917/photo/concept-of-email-filter-in-work.jpg?s=612x612&w=0&k=20&c=3pfIX3lVsbjE1Kqbyh9xDeuXMMI_77odZ3QencFcMo8=" width=400 ="Spam Detection Illustration">
+                </div>
+                <div class="col-md-6">
+                    <h2>Advanced Spam Detection</h2>
+                    <p style="text-align: justify;">Our system leverages state-of-the-art machine learning algorithms to accurately detect and eliminate spam messages across multiple communication channels. Whether you are dealing with emails, text messages, or online comments, our advanced technology ensures that your interactions remain free from unwanted content. By continuously learning and adapting to new spam tactics, our system maintains a high level of precision in identifying even the most sophisticated spam attempts. We prioritize the security and cleanliness of your communication platforms, providing you with a seamless and worry-free experience. Our solution is ideal for businesses, organizations, and individuals who value trust, safety, and efficiency in their digital communications. With regular updates and enhancements, we stay one step ahead to protect your online environment effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Features</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://www.mdpi.com/applsci/applsci-13-11783/article_deploy/html/images/applsci-13-11783-g004.png" width= 300="card-img-top" alt="Feature 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Multi-Model Prediction Comparison</h5>
+                            <p class="card-text">The website can display spam detection results from multiple machine learning models like Naive Bayes, Logistic Regression, and Random Forest. Each model will independently analyze the message, offering separate predictions and confidence scores. This comparison builds user trust by showing varied insights.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2022_01_Text-Pre-processing-For-Spam-Filtering.jpg" class="card-img-top" alt="Feature 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Live Text Preprocessing Preview</h5>
+                            <p class="card-text">Before analyzing the message for spam, the website can show a real-time preview of the cleaned text. This cleaned version removes special characters, lowercases the text, and filters unnecessary words. It helps users understand how their input is transformed before prediction, adding transparency and educational value to the detection process.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://camo.githubusercontent.com/a7d756449bad6072383da52721ceeff69f15c4df91d1c5a8e2e97d2d605b3e9b/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f302a6d624642506350554a442d35337633682e706e67" width = 320 height="175""class="card-img-top" alt="Feature 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bulk Detection </h5>
+                            <p class="card-text">Users can upload files containing multiple messages for analysis through a bulk detection feature. The system will process every entry individually, displaying the results in a table with message text, prediction, and confidence. This is  helpful enlighting highly beneficial for organizations or individuals needing to quickly screen a large set of communications.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-025-92223-1/MediaObjects/41598_2025_92223_Fig1_HTML.png" class="card-img-top" alt="Feature 4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Spam Probability Visualization</h5>
+                            <p class="card-text">Instead of showing only text-based results, the website can use visual elements like progress bars  probability. These visualizations levels easy to understand at a glance. By using colors and dynamic effects, the detection  modern, and user-friendly for everyone.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://www.lubigelindia.com/files/catalog/About/why-choose-us.jpg" alt="Why Choose Us Illustration">
+                </div>
+                <div class="col-md-6">
+                    <h2>Why Choose Us</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i> Versatile Bulk Upload and API Integration Options for All Your Detection Needs
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i> Top-Tier Security and Complete Privacy Protection for Your Data
+
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i> Sleek, Modern, and User-Friendly Interface for a Seamless Experience
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success"></i>Instant, Real-Time Predictions with Lightning-Fast Processing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="client-feedback-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Blogs</h2>
+        <div class="row">
+            <!-- Feedback 1 -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://t4.ftcdn.net/jpg/09/63/54/13/360_F_963541305_wNPbR20GMTVt5SvSxxgv7CRqXJNWI1hx.jpg" width=200 class="rounded-circle mx-auto mt-3" alt="Client 1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Evolution of Spam</h5>
+                        <p class="card-text">"Spam has been around for almost as long as email itself. What started as a minor annoyance has evolved into a sophisticated threat that can compromise your security, steal your data, and cost you money. In this blog post, we'll take a look at the history of spam, how it has changed over time, and the latest techniques used by spammers."</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Feedback 2 -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2025/02/man-with-emails-coming-out-of-tablet.jpg"width=200 class="rounded-circle mx-auto mt-3" alt="Client 2">
+                    <div class="card-body">
+                        <h5 class="card-title">How Spam Detection Works</h5>
+                        <p class="card-text">"Have you ever wondered how spam filters work? It might seem like magic, but there's a lot of complex technology working behind the scenes. In this blog post, we'll dive into the world of spam detection and explore the various techniques used to identify and block unwanted messages, from simple keyword filters to advanced machine learning algorithms."</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Feedback 3 -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://www.shutterstock.com/image-photo/protect-email-against-spam-junk-260nw-404482267.jpg" width=200 class="rounded-circle mx-auto mt-3"alt="Client 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Why Spam Detection is Crucial</h5>
+                        <p class="card-text">"Spam isn't just a nuisance; it can seriously harm your business. From lost productivity and wasted resources to security breaches and reputational damage, the cost of spam can be significant. In this blog post, we'll discuss the importance of effective spam detection for businesses of all sizes and how it can protect your bottom line."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact-map-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Form Column -->
+            <div class="col-md-6">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            
+            <!-- Map Column -->
+            <div class="col-md-6">
+                <h2>Our Location</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468132!3d37.7749297797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f0e6b1b1%3A0x4c9b7f3b9c4b7c3!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
+{% endblock %}

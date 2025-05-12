@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            
+            background-image: url('https://i.pinimg.com/736x/fd/09/94/fd099408f7d2823899b828cda6a13dc9.jpg');
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .custom-hero-text { background-color: #1515b794;
+            border-radius: 10px;
+            padding: 20px;
+            width: 800px;
+        }
+        .background {
+            background-image: url('https://t3.ftcdn.net/jpg/06/27/85/70/360_F_627857017_5r2FsJYJeZfufqiXcUvKCENF3fz4xFyg.jpg');
+            background-size: cover;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+<section class="hero-section" >
+    <div class="container custom-hero-text">
+        <h1 class="display-4">Contact Us</h1>
+        <p class="lead">We’re here to help! Reach out to us with any questions or feedback.</p>
+    </div>
+</section>
+
+
+<section class="two-columns-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Column -->
+            <div class="col-md-6">
+                <img src="https://img.freepik.com/free-photo/medium-shot-woman-holding-tablet_23-2149151168.jpg?semt=ais_hybrid&w=740" alt="Contact Us Illustration" class="img-fluid rounded">
+            </div>
+            <!-- Text Column -->
+            <div class="col-md-6">
+                <h2 style="text-align: center;">Why Reach Out?</h2>
+                <p style="text-align: justify;">We are here to assist you with any questions, feedback, or support you need. Our team is dedicated to ensuring your experience with our spam detection system is seamless and effective. Let us help you make communication safer and more efficient.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="address-contact-section py-5">
+
+    <div class="container-fluid background">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Address Column -->
+                <div class="col-md-6">
+                    <h2>Our Address</h2>
+                    <p><strong>Office:</strong> 123 Spam Detection Street, Tech City, USA</p>
+                    <p><strong>Email:</strong> support@spamdetect.com</p>
+                    <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                    <p><strong>Working Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM</p>
+                </div>
+                <!-- Contact Form Column -->
+                <div class="col-md-6">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="map-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Find Us Here</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468132!3d37.7749297797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f0e6b1b1%3A0x4c9b7f3b9c4b7c3!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+   
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{% endblock %}
