@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request  # Added 'request' for handling form data
+from flask import Flask, render_template, request
 import joblib
 import re
 import nltk
@@ -29,6 +29,7 @@ def contact():
 def result():
     return render_template("result.html")
 
+# Text cleaning function
 def clean_text(text):
     text = re.sub(r'\W', ' ', text)
     text = text.lower()
@@ -36,17 +37,19 @@ def clean_text(text):
     text = [word for word in text if word not in stop_words]
     return ' '.join(text)
 
+# Load the model dictionary (without clean_text inside)
 spam_detector = joblib.load("spam_detector.pkl")
 
 vectorizer = spam_detector['vectorizer']
 nb_model = spam_detector['nb_model']
 lr_model = spam_detector['lr_model']
 rf_model = spam_detector['rf_model']
-clean_text = spam_detector['clean_text']
 
+# Function to make predictions using the loaded models
 def predict_spam(message):
     cleaned_message = clean_text(message)
     vectorized_message = vectorizer.transform([cleaned_message])
+    
     nb_prediction = nb_model.predict(vectorized_message)
     lr_prediction = lr_model.predict(vectorized_message)
     rf_prediction = rf_model.predict(vectorized_message)
@@ -63,9 +66,8 @@ def predict_spam(message):
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    message = request.form["message"]  # Ensure 'message' matches the form field name in your HTML
+    message = request.form["message"]
     predictions = predict_spam(message)
-    
     return render_template("result.html", predictions=predictions, message=message)
 
 if __name__ == "__main__":
